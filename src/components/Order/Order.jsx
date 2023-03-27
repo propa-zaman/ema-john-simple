@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 import './Order.css';
 
 const Order = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() =>{
+        fetch('products.json')
+        .then(res => res.json())
+        .then(data => setProducts(data))
+
+
+    },[])
     return (
         <div className='order-container'>
             <div className="products-container">
-                <h2>Products</h2>
+                {
+                    products.map(product => <Product
+                        key={product.id}
+                        product={product}>
+                        
+                    </Product>)
+                }
 
             </div>
 
