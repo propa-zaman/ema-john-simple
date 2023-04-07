@@ -10,3 +10,13 @@
     grid-gap: 45px;
     margin: 50px;
 }
+
+.btn-review-order{
+    width: 90%;
+    padding: 10px;
+    margin: 6px;
+    background: #FF9900;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}

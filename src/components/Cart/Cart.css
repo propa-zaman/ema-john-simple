@@ -1,4 +1,4 @@
-.cart{
+.cart {
     background: #FF99004D;
     padding: 25px;
     position: sticky;
@@ -6,10 +6,22 @@
 
 }
 
-.cart p{
+.cart p {
     font-size: 17px;
 }
 
-.cart h6{
+.cart h6 {
     font-size: 18px;
+}
+
+.btn-clear-cart {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    background: #FF3030;
+    border-radius: 4px;
+    color: white;
+    border: none;
 }
