@@ -7,7 +7,7 @@ import './Order.css';
 
 const Order = () => {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
 
     useEffect(() =>{
         fetch('products.json')
